@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // 1. MOBILE NAV TOGGLE
+    // 1. MOBILE MENU TOGGLE
     const mobileToggle = document.getElementById("mobileToggle");
     const navMenu = document.getElementById("navMenu");
 
@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Open Modal
     document.querySelectorAll(".btn-enquire").forEach(button => {
         button.addEventListener("click", (e) => {
+            e.preventDefault();
             const btn = e.target.closest('.btn-enquire');
             const productName = btn.getAttribute("data-product");
             modalProductName.textContent = productName;
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const product = document.getElementById("interestProduct").value;
             
             if (name && phone) {
-                formFeedback.textContent = `Thank you, ${name}. Your inquiry regarding ${product} has been registered. Our sales team will contact you.`;
+                formFeedback.textContent = `Thank you, ${name}. Your inquiry regarding ${product} has been registered. Our sales team will contact you shortly.`;
                 formFeedback.className = "form-feedback success";
                 enquiryForm.reset();
                 setTimeout(() => { formFeedback.className = "form-feedback hidden"; }, 6000);

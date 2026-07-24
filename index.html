@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parikh Agro Industries | Manufacturer of Quality Edible Oils</title>
-    <meta name="description" content="Parikh Agro Industries (Brand: MADHAV) - Refined Cotton Seed Oil, Soyabean Oil, Palmolein Oil manufacturer in Dahod, Gujarat.">
+    <title>Parikh Agro Industries | Refined Edible Oil Manufacturer</title>
+    <meta name="description" content="Parikh Agro Industries (Brand: MADHAV) - Manufacturer of Refined Cotton Seed Oil, Soyabean Oil, and Palmolein Oil in Dahod, Gujarat.">
+    
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- TOP BAR -->
+    <!-- TOP ANNOUNCEMENT STRIP -->
     <div class="top-bar">
         <div class="container top-bar-container">
             <div class="top-info">
-                <span><i class="fa-regular fa-envelope"></i> <a href="mailto:parikhagroindustries@gmail.com">parikhagroindustries@gmail.com</a></span>
+                <span><i class="fa-solid fa-envelope"></i> <a href="mailto:parikhagroindustries@gmail.com">parikhagroindustries@gmail.com</a></span>
                 <span><i class="fa-solid fa-phone"></i> <a href="tel:+919324216655">+91 9324216655</a> / <a href="tel:+918980258391">+91 8980258391</a></span>
             </div>
             <div class="top-right">
-                <span class="gst-pill"><i class="fa-solid fa-shield-halved"></i> GSTIN: <strong>24AAPFP3891K1Z9</strong></span>
+                <span class="gst-badge"><i class="fa-solid fa-shield-check"></i> GSTIN: <strong>24AAPFP3891K1Z9</strong></span>
             </div>
         </div>
     </div>
 
-    <!-- NAVIGATION HEADER -->
+    <!-- MAIN NAVBAR HEADER -->
     <header class="header">
         <div class="container nav-container">
-            <!-- LOGO AREA -->
-            <div class="logo-wrapper">
-                <a href="#home" class="logo-link">
-                    <img src="parikh_logo.png" alt="Parikh Agro Industries" class="nav-logo main-company-logo">
-                    <span class="logo-divider"></span>
-                    <img src="madhav_logo.png" alt="Madhav Brand" class="nav-logo brand-flagship-logo">
+            <!-- BRAND LOGOS CONTAINER -->
+            <div class="logo-group">
+                <a href="#home" class="logo-box">
+                    <img src="parikh_logo.png" alt="Parikh Agro Industries" class="logo-img main-logo">
+                    <span class="v-divider"></span>
+                    <img src="madhav_logo.png" alt="Madhav Brand" class="logo-img brand-logo">
                 </a>
             </div>
 
-            <!-- NAV LINKS -->
+            <!-- MENU LINKS -->
             <nav class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About Us</a>
                 <a href="#products" class="nav-link">Our Products</a>
-                <a href="#quality" class="nav-link">Quality & Safety</a>
+                <a href="#quality" class="nav-link">Quality Standards</a>
                 <a href="#contact" class="nav-link">Contact Us</a>
             </nav>
 
             <div class="nav-actions">
-                <a href="#contact" class="btn-nav-quote"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
+                <a href="#contact" class="btn-head-quote"><i class="fa-solid fa-paper-plane"></i> Get Quote</a>
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars"></i>
                 </button>
@@ -58,30 +60,44 @@
 
     <!-- HERO SECTION -->
     <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="container hero-container">
-            <div class="hero-content text-center">
-                <div class="corporate-badge"><i class="fa-solid fa-award"></i> Flagship Brand: <strong>MADHAV</strong></div>
-                <h1 class="hero-title">PARIKH AGRO INDUSTRIES</h1>
-                <p class="hero-subtitle">Premium Manufacturer & Refiner of Quality Edible Oils</p>
-                <p class="hero-tagline">Nourishing Lives Across India With Purity & Superior Taste</p>
+            <div class="hero-center-box">
+                <div class="hero-pill-badge">
+                    <i class="fa-solid fa-award"></i> Flagship Brand: <strong>MADHAV</strong>
+                </div>
                 
-                <div class="hero-actions">
-                    <a href="#products" class="btn btn-gold"><i class="fa-solid fa-layer-group"></i> Explore Products</a>
-                    <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Contact Sales Desk</a>
+                <h1 class="hero-main-title">PARIKH AGRO INDUSTRIES</h1>
+                <p class="hero-subtext">Premium Manufacturer & Refiner of High-Quality Edible Oils</p>
+                <p class="hero-tagline">Nourishing Millions Across India With Purity, Freshness & Superior Taste</p>
+
+                <div class="hero-cta-buttons">
+                    <a href="#products" class="cta-btn primary-gold"><i class="fa-solid fa-layer-group"></i> Explore Our Range</a>
+                    <a href="#contact" class="cta-btn secondary-dark"><i class="fa-solid fa-headset"></i> Contact Sales Desk</a>
                 </div>
 
-                <div class="hero-stats-row">
-                    <div class="stat-box">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Pure & Refined</span>
+                <!-- TRUST METRICS -->
+                <div class="hero-metrics-grid">
+                    <div class="metric-card">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div>
+                            <h4>100% Pure</h4>
+                            <p>Refined & Chemical Free</p>
+                        </div>
                     </div>
-                    <div class="stat-box">
-                        <span class="stat-number">FSSAI</span>
-                        <span class="stat-label">Compliant Quality</span>
+                    <div class="metric-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div>
+                            <h4>FSSAI Certified</h4>
+                            <p>Strict Safety Standards</p>
+                        </div>
                     </div>
-                    <div class="stat-box">
-                        <span class="stat-number">Pan-India</span>
-                        <span class="stat-label">Bulk Supply</span>
+                    <div class="metric-card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <div>
+                            <h4>Pan-India Supply</h4>
+                            <p>Bulk & Wholesale Network</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,70 +107,71 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="about-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="sub-title">Corporate Profile</span>
-                <h2 class="section-title">Pioneering Pure Cooking Solutions</h2>
-                <div class="title-line"></div>
+            <div class="section-title-block">
+                <span class="sub-heading">Corporate Profile</span>
+                <h2 class="main-heading">Pioneering Pure Cooking Solutions</h2>
+                <div class="heading-line"></div>
             </div>
 
-            <div class="about-card-wrapper">
-                <div class="about-main-text">
+            <div class="about-card-box">
+                <div class="about-text-content">
                     <h3>Excellence in Edible Oil Refining</h3>
-                    <p>At <strong>Parikh Agro Industries</strong>, we manufacture and refine premium quality edible oils under our flagship brand <strong>MADHAV</strong>. Based in Dahod, Gujarat, our modern processing unit operates under strict food safety and hygienic frameworks.</p>
-                    <p>We blend rich processing expertise with modern technological setups to serve clean, healthy, and highly nutritious cooking oils for household kitchens and commercial food manufacturing industries.</p>
+                    <p>At <strong>Parikh Agro Industries</strong>, we manufacture and refine premium quality edible oils under our widely recognized flagship brand <strong>MADHAV</strong>. Operating from Dahod, Gujarat, our modern processing plant operates under strict food safety guidelines.</p>
+                    <p>We integrate modern non-touch refining technologies to produce clear, healthy, and thermally stable cooking oils tailored for both household culinary needs and commercial food industries.</p>
                 </div>
 
-                <div class="pillars-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i class="fa-solid fa-gears"></i></div>
-                        <h4>Automated Plant</h4>
-                        <p>Non-touch enclosed refining processes ensuring complete hygienic processing.</p>
+                <div class="about-pillars-row">
+                    <div class="pillar-item">
+                        <div class="p-icon"><i class="fa-solid fa-industry"></i></div>
+                        <h4>Modern Refining</h4>
+                        <p>Automated non-touch processing preserving natural nutrients.</p>
                     </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
-                        <h4>Strict Quality Lab</h4>
-                        <p>Every production batch passes strict density, clarity, and peroxide tests.</p>
+                    <div class="pillar-item">
+                        <div class="p-icon"><i class="fa-solid fa-flask-vial"></i></div>
+                        <h4>Lab Tested</h4>
+                        <p>Every production batch passes strict purity & viscosity checks.</p>
                     </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                        <h4>Fast Dispatches</h4>
-                        <p>Extensive logistics coverage catering to regional and pan-India supply demands.</p>
+                    <div class="pillar-item">
+                        <div class="p-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                        <h4>Bulk Dispatches</h4>
+                        <p>Timely volume dispatches across regional & national routes.</p>
                     </div>
-                    <div class="pillar-card">
-                        <div class="pillar-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="pillar-item">
+                        <div class="p-icon"><i class="fa-solid fa-handshake"></i></div>
                         <h4>Direct Factory Rates</h4>
-                        <p>Competitive B2B wholesale pricing for institutional buyers and distributors.</p>
+                        <p>Competitive B2B wholesale prices for distributors and caterers.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCTS SECTION -->
+    <!-- PRODUCTS SHOWCASE SECTION -->
     <section id="products" class="products-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="sub-title">Product Portfolio</span>
-                <h2 class="section-title">Our Premium Edible Oils</h2>
-                <div class="title-line"></div>
-                <p class="section-subtitle">Refined for superior thermal stability, crystal clarity, and natural health benefits.</p>
+            <div class="section-title-block">
+                <span class="sub-heading">Product Range</span>
+                <h2 class="main-heading">Our Premium Edible Oils</h2>
+                <div class="heading-line"></div>
+                <p class="section-subtitle">Processed for crystal clarity, high smoke points, and optimal nutrition.</p>
             </div>
 
-            <div class="products-grid">
+            <div class="products-container-grid">
                 
                 <!-- PRODUCT 1: COTTONSEED -->
-                <div class="product-card">
-                    <div class="product-badge">Top Seller</div>
-                    <div class="product-img-box">
-                        <img src="Cotton.png" alt="Madhav Refined Cotton Seed Oil">
+                <div class="product-item-card">
+                    <span class="card-badge gold-badge">Top Seller</span>
+                    <div class="product-image-container">
+                        <img src="Cotton.png" alt="Madhav Refined Cotton Seed Oil" class="product-photo">
                     </div>
-                    <div class="product-info">
-                        <div class="brand-sub-tag">BRAND: MADHAV</div>
-                        <h3 class="product-title">Refined Cotton Seed Oil</h3>
-                        <p class="product-desc">Features high thermal stability and non-sticky texture. Keeps food light, crispy, and preserves authentic taste during deep frying.</p>
-                        <div class="pack-sizes">
-                            <span class="pack-label"><i class="fa-solid fa-box-archive"></i> Available Packings:</span>
-                            <div class="pack-tags">
+                    <div class="product-details-body">
+                        <div class="brand-tagline-sm">BRAND: MADHAV</div>
+                        <h3 class="product-title-text">Refined Cotton Seed Oil</h3>
+                        <p class="product-description-text">High thermal stability with non-sticky texture. Ideal for deep frying, daily Indian cooking, and crisp snacks preparation.</p>
+                        
+                        <div class="pack-size-block">
+                            <span class="pack-size-label"><i class="fa-solid fa-box"></i> Available Packings:</span>
+                            <div class="pack-chips">
                                 <span>500 ml</span>
                                 <span>1 Ltr</span>
                                 <span>5 Ltr</span>
@@ -162,23 +179,27 @@
                                 <span>15 Kg Jar</span>
                             </div>
                         </div>
-                        <button class="btn-quote-card btn-enquire" data-product="Madhav Refined Cotton Seed Oil"><i class="fa-solid fa-paper-plane"></i> Request Price Quote</button>
+                        
+                        <a href="javascript:void(0)" class="product-action-btn btn-enquire" data-product="Madhav Refined Cotton Seed Oil">
+                            <i class="fa-solid fa-paper-plane"></i> Request Price Quote
+                        </a>
                     </div>
                 </div>
 
                 <!-- PRODUCT 2: SOYABEAN -->
-                <div class="product-card">
-                    <div class="product-badge healthy">Nutritious Choice</div>
-                    <div class="product-img-box">
-                        <img src="Soyabean.png" alt="Madhav Refined Soyabean Oil">
+                <div class="product-item-card">
+                    <span class="card-badge green-badge">Healthy Choice</span>
+                    <div class="product-image-container">
+                        <img src="Soyabean.png" alt="Madhav Refined Soyabean Oil" class="product-photo">
                     </div>
-                    <div class="product-info">
-                        <div class="brand-sub-tag">BRAND: MADHAV</div>
-                        <h3 class="product-title">Refined Soyabean Oil</h3>
-                        <p class="product-desc">Enriched with essential Omega-3 fatty acids. Light texture, low smoke formation, and ideal for health-conscious daily cooking.</p>
-                        <div class="pack-sizes">
-                            <span class="pack-label"><i class="fa-solid fa-box-archive"></i> Available Packings:</span>
-                            <div class="pack-tags">
+                    <div class="product-details-body">
+                        <div class="brand-tagline-sm">BRAND: MADHAV</div>
+                        <h3 class="product-title-text">Refined Soyabean Oil</h3>
+                        <p class="product-description-text">Enriched with natural Omega-3 fatty acids. Light texture, low smoke formation, and ideal for health-conscious daily meals.</p>
+                        
+                        <div class="pack-size-block">
+                            <span class="pack-size-label"><i class="fa-solid fa-box"></i> Available Packings:</span>
+                            <div class="pack-chips">
                                 <span>500 ml</span>
                                 <span>1 Ltr</span>
                                 <span>5 Ltr</span>
@@ -186,23 +207,27 @@
                                 <span>15 Kg Jar</span>
                             </div>
                         </div>
-                        <button class="btn-quote-card btn-enquire" data-product="Madhav Refined Soyabean Oil"><i class="fa-solid fa-paper-plane"></i> Request Price Quote</button>
+
+                        <a href="javascript:void(0)" class="product-action-btn btn-enquire" data-product="Madhav Refined Soyabean Oil">
+                            <i class="fa-solid fa-paper-plane"></i> Request Price Quote
+                        </a>
                     </div>
                 </div>
 
                 <!-- PRODUCT 3: PALMOLEIN -->
-                <div class="product-card">
-                    <div class="product-badge commercial">Commercial Choice</div>
-                    <div class="product-img-box">
-                        <img src="palm.png" alt="Madhav Refined Palmolein Oil">
+                <div class="product-item-card">
+                    <span class="card-badge blue-badge">Commercial Choice</span>
+                    <div class="product-image-container">
+                        <img src="palm.png" alt="Madhav Refined Palmolein Oil" class="product-photo">
                     </div>
-                    <div class="product-info">
-                        <div class="brand-sub-tag">BRAND: MADHAV</div>
-                        <h3 class="product-title">Refined Palmolein Oil</h3>
-                        <p class="product-desc">High oxidation resistance and zero foaming composition. Engineered for high-temperature commercial bakery and food snacks manufacturing.</p>
-                        <div class="pack-sizes">
-                            <span class="pack-label"><i class="fa-solid fa-box-archive"></i> Available Packings:</span>
-                            <div class="pack-tags">
+                    <div class="product-details-body">
+                        <div class="brand-tagline-sm">BRAND: MADHAV</div>
+                        <h3 class="product-title-text">Refined Palmolein Oil</h3>
+                        <p class="product-description-text">High oxidation stability and non-foaming composition. Formulated for commercial bakeries and large-scale snack manufacturing.</p>
+                        
+                        <div class="pack-size-block">
+                            <span class="pack-size-label"><i class="fa-solid fa-box"></i> Available Packings:</span>
+                            <div class="pack-chips">
                                 <span>500 ml</span>
                                 <span>1 Ltr</span>
                                 <span>5 Ltr</span>
@@ -210,7 +235,10 @@
                                 <span>15 Kg Jar</span>
                             </div>
                         </div>
-                        <button class="btn-quote-card btn-enquire" data-product="Madhav Refined Palmolein Oil"><i class="fa-solid fa-paper-plane"></i> Request Price Quote</button>
+
+                        <a href="javascript:void(0)" class="product-action-btn btn-enquire" data-product="Madhav Refined Palmolein Oil">
+                            <i class="fa-solid fa-paper-plane"></i> Request Price Quote
+                        </a>
                     </div>
                 </div>
 
@@ -218,28 +246,29 @@
         </div>
     </section>
 
-    <!-- QUALITY SECTION -->
-    <section id="quality" class="excellence-section section-padding">
+    <!-- QUALITY & CERTIFICATION SECTION -->
+    <section id="quality" class="quality-section section-padding">
         <div class="container">
-            <div class="excellence-box">
-                <div class="excellence-text">
-                    <span class="sub-title text-gold">Committed To Health</span>
+            <div class="quality-grid-wrapper">
+                <div class="quality-info-text">
+                    <span class="sub-heading text-gold">Committed To Health</span>
                     <h2>Quality Assurance & Compliance</h2>
-                    <p>At Parikh Agro Industries, quality is our top operational framework. Every batch of <strong>MADHAV</strong> oil is tested to align with strict Indian food safety norms.</p>
-                    
-                    <ul class="quality-checklist">
-                        <li><i class="fa-solid fa-circle-check"></i> Sourced from verified high-grade seed suppliers.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Non-touch enclosed refining preserving natural vitamins.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Food-grade leakproof packaging (PET Bottles, HDPE Tins, Jars).</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Aligned strictly with FSSAI benchmarks.</li>
+                    <p>At Parikh Agro Industries, quality is our top priority. Every batch packed under brand <strong>MADHAV</strong> undergoes strict parameter testing before dispatch.</p>
+
+                    <ul class="quality-checklist-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Sourced from verified high-grade seed vendors.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Hygienic non-touch enclosed refining processes.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Food-grade PET Bottles, HDPE Tins, and rigid Jars.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Compliant with FSSAI standards.</li>
                     </ul>
                 </div>
-                <div class="excellence-cert-card">
-                    <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>GST Registered Enterprise</h3>
-                    <p class="gst-display">24AAPFP3891K1Z9</p>
-                    <div class="brand-endorse">
-                        <img src="madhav_logo.png" alt="Madhav Logo" class="cert-logo">
+
+                <div class="quality-badge-card">
+                    <div class="q-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>GST Registered Business</h3>
+                    <div class="gst-tag-display">GSTIN: 24AAPFP3891K1Z9</div>
+                    <div class="brand-assurance-flex">
+                        <img src="madhav_logo.png" alt="Madhav Logo" class="q-brand-logo">
                         <span>100% Quality Assured</span>
                     </div>
                 </div>
@@ -250,78 +279,78 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section section-padding">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="sub-title">Connect With Us</span>
-                <h2 class="section-title">Factory & Sales Office</h2>
-                <div class="title-line"></div>
+            <div class="section-title-block">
+                <span class="sub-heading">Connect With Us</span>
+                <h2 class="main-heading">Factory & Sales Office</h2>
+                <div class="heading-line"></div>
             </div>
 
-            <div class="contact-grid">
+            <div class="contact-card-grid">
                 <!-- CONTACT INFO -->
-                <div class="contact-info-card">
-                    <div class="company-head">
+                <div class="contact-details-panel">
+                    <div class="c-head">
                         <h3>PARIKH AGRO INDUSTRIES</h3>
-                        <p class="brand-sub"><i class="fa-solid fa-award"></i> Flagship Brand: <strong>MADHAV</strong></p>
+                        <p class="c-sub"><i class="fa-solid fa-award"></i> Flagship Brand: <strong>MADHAV</strong></p>
                     </div>
 
-                    <div class="contact-list">
-                        <div class="contact-item">
-                            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="c-info-list">
+                        <div class="c-row">
+                            <i class="fa-solid fa-location-dot"></i>
                             <div>
                                 <h4>Factory Address</h4>
                                 <p>Plot No. 269, Mega GIDC, Kharedi,<br>Dahod – 389151, Gujarat, India</p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="c-row">
+                            <i class="fa-solid fa-phone"></i>
                             <div>
-                                <h4>Sales Phone Numbers</h4>
+                                <h4>Sales Contact Numbers</h4>
                                 <p><a href="tel:+919324216655">+91 9324216655</a><br><a href="tel:+918980258391">+91 8980258391</a></p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="c-row">
+                            <i class="fa-solid fa-envelope"></i>
                             <div>
                                 <h4>Email Enquiries</h4>
                                 <p><a href="mailto:parikhagroindustries@gmail.com">parikhagroindustries@gmail.com</a></p>
                             </div>
                         </div>
 
-                        <div class="contact-item">
-                            <div class="c-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                        <div class="c-row">
+                            <i class="fa-solid fa-file-invoice"></i>
                             <div>
-                                <h4>GST Identification (GSTIN)</h4>
-                                <p class="gst-box">24AAPFP3891K1Z9</p>
+                                <h4>GST Identification Number</h4>
+                                <p class="gst-box-code">24AAPFP3891K1Z9</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- CONTACT FORM -->
-                <div class="contact-form-card">
+                <div class="contact-form-panel">
                     <h3>Send Business Inquiry</h3>
-                    <p>Fill out the form below for bulk sales, dealership inquiries, or factory rates.</p>
+                    <p>Contact us for bulk orders, dealership inquiries, or price lists.</p>
 
-                    <form id="enquiryForm">
+                    <form id="enquiryForm" class="site-form">
                         <div class="form-group">
-                            <label for="fullName">Full Name / Business Name *</label>
-                            <input type="text" id="fullName" class="form-control" placeholder="John Doe / Firm Name" required>
+                            <label for="fullName">Full Name / Firm Name *</label>
+                            <input type="text" id="fullName" class="form-input" placeholder="Your Name or Business Name" required>
                         </div>
-                        <div class="form-row">
+                        <div class="form-grid-2">
                             <div class="form-group">
                                 <label for="phone">Phone / WhatsApp *</label>
-                                <input type="tel" id="phone" class="form-control" placeholder="+91 Mobile Number" required>
+                                <input type="tel" id="phone" class="form-input" placeholder="+91 Mobile Number" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" class="form-control" placeholder="name@company.com">
+                                <input type="email" id="email" class="form-input" placeholder="name@company.com">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="interestProduct">Select Product</label>
-                            <select id="interestProduct" class="form-control">
+                            <select id="interestProduct" class="form-input">
                                 <option value="General Wholesale Enquiry">General Wholesale Enquiry</option>
                                 <option value="Madhav Refined Cotton Seed Oil">Madhav Refined Cotton Seed Oil</option>
                                 <option value="Madhav Refined Soyabean Oil">Madhav Refined Soyabean Oil</option>
@@ -330,17 +359,17 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Requirement Details *</label>
-                            <textarea id="message" rows="3" class="form-control" placeholder="Specify order quantity, pack size, and location..." required></textarea>
+                            <textarea id="message" rows="3" class="form-input" placeholder="Mention required quantity, pack sizes, and destination location..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-gold btn-full"><i class="fa-solid fa-paper-plane"></i> Submit Inquiry</button>
+                        <button type="submit" class="form-submit-btn"><i class="fa-solid fa-paper-plane"></i> Submit Inquiry</button>
                     </form>
                     <div id="formFeedback" class="form-feedback hidden"></div>
                 </div>
             </div>
 
             <!-- MAP -->
-            <div class="map-card">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.29362758151!2d74.2407559!3d22.8368532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396102ea6aaaaaaf%3A0x64bfdf013cb48482!2sKharedi%2C%20Dahod%2C%20Gujarat%20389151!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-card-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14664.29362758151!2d74.2407559!3d22.8368532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396102ea6aaaaaaf%3A0x64bfdf013cb48482!2sKharedi%2C%20Dahod%2C%20Gujarat%20389151!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -349,27 +378,27 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-col brand-col">
-                <div class="footer-logos">
-                    <img src="parikh_logo.png" alt="Parikh Agro Logo" class="f-logo">
-                    <img src="madhav_logo.png" alt="Madhav Logo" class="f-logo">
+                <div class="footer-logo-flex">
+                    <img src="parikh_logo.png" alt="Parikh Agro Logo" class="f-img">
+                    <img src="madhav_logo.png" alt="Madhav Logo" class="f-img">
                 </div>
-                <p>Parikh Agro Industries is a trusted producer of refined edible oils under brand name <strong>MADHAV</strong>.</p>
-                <span class="f-gst">GSTIN: 24AAPFP3891K1Z9</span>
+                <p>Parikh Agro Industries is a premier manufacturer of refined edible oils under brand <strong>MADHAV</strong>.</p>
+                <span class="f-gst-badge">GSTIN: 24AAPFP3891K1Z9</span>
             </div>
 
             <div class="footer-col">
-                <h4>Quick Navigation</h4>
+                <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#products">Our Products</a></li>
-                    <li><a href="#quality">Quality & Safety</a></li>
-                    <li><a href="#contact">Contact Desk</a></li>
+                    <li><a href="#quality">Quality Standards</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h4>Our Products</h4>
+                <h4>Our Range</h4>
                 <ul>
                     <li><a href="#products">Refined Cotton Seed Oil</a></li>
                     <li><a href="#products">Refined Soyabean Oil</a></li>
@@ -398,40 +427,40 @@
         <div class="enquiry-modal-content">
             <span class="enquiry-modal-close">&times;</span>
             <h3>Product Inquiry</h3>
-            <p>Inquiring for <strong id="modalProductName">Selected Product</strong></p>
-            <form id="modalEnquiryForm">
+            <p>Inquiring about <strong id="modalProductName">Selected Product</strong></p>
+            <form id="modalEnquiryForm" class="site-form">
                 <input type="hidden" id="modalProductInput">
                 <div class="form-group">
                     <label for="modalName">Full Name *</label>
-                    <input type="text" id="modalName" class="form-control" required>
+                    <input type="text" id="modalName" class="form-input" required>
                 </div>
-                <div class="form-row">
+                <div class="form-grid-2">
                     <div class="form-group">
                         <label for="modalPhone">Phone / WhatsApp *</label>
-                        <input type="tel" id="modalPhone" class="form-control" required>
+                        <input type="tel" id="modalPhone" class="form-input" required>
                     </div>
                     <div class="form-group">
                         <label for="modalEmail">Email</label>
-                        <input type="email" id="modalEmail" class="form-control">
+                        <input type="email" id="modalEmail" class="form-input">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="modalMessage">Requirement Details *</label>
-                    <textarea id="modalMessage" rows="3" class="form-control" placeholder="Quantity required, target location..." required></textarea>
+                    <textarea id="modalMessage" rows="3" class="form-input" placeholder="Quantity required, pack sizes, target destination..." required></textarea>
                 </div>
-                <button type="submit" class="btn btn-gold btn-full">Submit Fast Quote Request</button>
+                <button type="submit" class="form-submit-btn">Submit Fast Quote Request</button>
             </form>
             <div id="modalFeedback" class="form-feedback hidden"></div>
         </div>
     </div>
 
-    <!-- FLOATING BUTTONS -->
+    <!-- FLOATING ACTIONS -->
     <div class="floating-actions">
-        <a href="tel:+919324216655" class="float-btn call-btn" aria-label="Call Sales">
+        <a href="tel:+919324216655" class="float-btn call-btn" aria-label="Call Sales Desk">
             <i class="fa-solid fa-phone"></i>
-            <span class="tooltip">Call Desk</span>
+            <span class="tooltip">Call Sales</span>
         </a>
-        <a href="https://wa.me/919324216655?text=Hello%20Parikh%20Agro%20Industries%2C%20I%20want%20information%20regarding%20Madhav%20Edible%20Oils." target="_blank" class="float-btn wa-btn" aria-label="WhatsApp">
+        <a href="https://wa.me/919324216655?text=Hello%20Parikh%20Agro%20Industries%2C%20I%20am%20interested%20in%20Madhav%20Edible%20Oils." target="_blank" class="float-btn wa-btn" aria-label="WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
             <span class="tooltip">WhatsApp</span>
         </a>

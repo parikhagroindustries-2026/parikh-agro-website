@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileToggle.addEventListener("click", () => {
             navMenu.classList.toggle("show");
             const isExpanded = navMenu.classList.contains("show");
-            mobileToggle.querySelector("i").className = isExpanded ? "fa-solid fa-xmark" : "fa-solid fa-bars-staggered";
+            mobileToggle.querySelector("i").className = isExpanded ? "fa-solid fa-xmark" : "fa-solid fa-bars";
         });
 
         document.querySelectorAll(".nav-link").forEach(link => {
             link.addEventListener("click", () => {
                 if (navMenu.classList.contains("show")) {
                     navMenu.classList.remove("show");
-                    mobileToggle.querySelector("i").className = "fa-solid fa-bars-staggered";
+                    mobileToggle.querySelector("i").className = "fa-solid fa-bars";
                 }
             });
         });
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const product = document.getElementById("interestProduct").value;
             
             if (name && phone) {
-                formFeedback.textContent = `Thank you, ${name}. Your commercial enquiry regarding ${product} has been registered. Our sales team will contact you.`;
+                formFeedback.textContent = `Thank you, ${name}. Your inquiry regarding ${product} has been registered. Our sales team will contact you.`;
                 formFeedback.className = "form-feedback success";
                 enquiryForm.reset();
                 setTimeout(() => { formFeedback.className = "form-feedback hidden"; }, 6000);

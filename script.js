@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // 1. MOBILE MENU TOGGLE
+
+    // 1. MOBILE NAV TOGGLE
     const mobileToggle = document.getElementById("mobileToggle");
     const navMenu = document.getElementById("navMenu");
 
@@ -8,29 +8,27 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileToggle.addEventListener("click", () => {
             navMenu.classList.toggle("show");
             const isExpanded = navMenu.classList.contains("show");
-            mobileToggle.querySelector("i").className = isExpanded ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+            mobileToggle.querySelector("i").className = isExpanded ? "fa-solid fa-xmark" : "fa-solid fa-bars-staggered";
         });
 
-        const navLinks = document.querySelectorAll(".nav-link");
-        navLinks.forEach(link => {
+        document.querySelectorAll(".nav-link").forEach(link => {
             link.addEventListener("click", () => {
                 if (navMenu.classList.contains("show")) {
                     navMenu.classList.remove("show");
-                    mobileToggle.querySelector("i").className = "fa-solid fa-bars";
+                    mobileToggle.querySelector("i").className = "fa-solid fa-bars-staggered";
                 }
             });
         });
     }
 
-    // 2. ACTIVE NAVIGATION LINK ON SCROLL
+    // 2. ACTIVE NAVIGATION HIGHLIGHT ON SCROLL
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
 
     window.addEventListener("scroll", () => {
         let currentSectionId = "home";
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (window.pageYOffset >= (sectionTop - 150)) {
+            if (window.pageYOffset >= (section.offsetTop - 150)) {
                 currentSectionId = section.getAttribute("id");
             }
         });
@@ -53,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formFeedback = document.getElementById("formFeedback");
     const modalFeedback = document.getElementById("modalFeedback");
 
-    // Open Modal on "Get Price Quote" click
+    // Open Modal
     document.querySelectorAll(".btn-enquire").forEach(button => {
         button.addEventListener("click", (e) => {
             const btn = e.target.closest('.btn-enquire');
@@ -81,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Contact Form Submission
+    // Submit Main Contact Form
     if (enquiryForm) {
         enquiryForm.addEventListener("submit", (e) => {
             e.preventDefault();
@@ -90,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const product = document.getElementById("interestProduct").value;
             
             if (name && phone) {
-                formFeedback.textContent = `Thank you, ${name}. Your enquiry regarding ${product} has been registered. Our sales team will contact you shortly.`;
+                formFeedback.textContent = `Thank you, ${name}. Your commercial enquiry regarding ${product} has been registered. Our sales team will contact you.`;
                 formFeedback.className = "form-feedback success";
                 enquiryForm.reset();
                 setTimeout(() => { formFeedback.className = "form-feedback hidden"; }, 6000);
@@ -101,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Modal Form Submission
+    // Submit Modal Form
     if (modalEnquiryForm) {
         modalEnquiryForm.addEventListener("submit", (e) => {
             e.preventDefault();
